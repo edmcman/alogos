@@ -84,7 +84,7 @@ def forward(
 
 def _forward_fast(grammar, gt, ism):
     """Calculate the genotype-to-phenotype map of CFG-GP-ST in a fast way."""
-    return "".join(ism[s].text for s, n in zip(*gt.data) if n == 0)
+    return " ".join(ism[s].text for s, n in zip(*gt.data) if n == 0)
 
 
 def _forward_slow(grammar, genotype, ism, verbose):
